@@ -6,8 +6,8 @@ const tileImages = {
     '6': new Image()
 };
 
-tileImages['3'].src = '/images/spikes.png';
-tileImages['6'].src = '/images/spikes_copy.png';
+tileImages['3'].src = './images/spikes.png';
+tileImages['6'].src = './images/spikes_copy.png';
 
 async function loadLevel(url) {
     const response = await fetch(url);

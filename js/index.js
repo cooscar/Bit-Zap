@@ -202,7 +202,7 @@ function animate() {
 
 window.onload = () => {
     if (typeof loadLevel === 'function') {
-        loadLevel(`/levels/${selectedLevel}`).then(() => {
+        loadLevel(`./levels/${selectedLevel}`).then(() => {
             animate();
         });
     }
