@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bit Zap</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="png" href="/images/icon.jpeg">
+</head>
+<body>
+    <div class="menu-container">
+        <h1>     Bit Zap </h1>
+        <h2 id="score">Points: 0</h2> 
+
+        <div class="level-container">
+            <h3>Select a Level</h3>
+            <div class="level-grid">
+                <button onclick="selectLevel('level1.txt')">Level 1</button>
+                <button onclick="selectLevel('level2.txt')">Level 2</button>
+                <button onclick="selectLevel('level3.txt')">Level 3</button>
+                <button onclick="selectLevel('level4.txt')">Level 4</button>
+                <button onclick="selectLevel('level5.txt')">Level 5</button>
+                <button onclick="selectLevel('level6.txt')">Level 6</button>
+                <button onclick="selectLevel('level7.txt')">Level 7</button>
+                <button onclick="selectLevel('level8.txt')">Level 8</button>
+                <button onclick="selectLevel('level9.txt')">Level 9</button>
+                <button onclick="selectLevel('level10.txt')">Level 10</button>
+                <button onclick="selectLevel('level11.txt')">Level 11</button>
+                <button onclick="selectLevel('level12.txt')">Level 12</button>
+                <button onclick="selectLevel('level13.txt')">Level 13</button>
+                <button onclick="selectLevel('level14.txt')">Level 14</button>
+                <button onclick="selectLevel('level15.txt')">Level 15</button>
+            </div>
+        </div>
+
+        <div class="links">
+            <a href="https://discord.com/users/884805614591676426" class="social-btn discord">
+                <img src="icons/discord-logo.jpeg" alt="Discord"> Discord
+            </a>
+            <a href="https:/github.com/cooscar" class="social-btn github">
+                <img src="icons/github.png" alt="GitHub"> GitHub
+            </a>
+        </div>
+    </div>
+
+    <script>
+        function selectLevel(level) {
+            window.location.href = `index.html?level=${level}`;
+        }
+    </script>
+    <script src="/js/score.js"></script> 
+</body>
+</html>

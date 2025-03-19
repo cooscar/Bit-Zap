@@ -1,0 +1,18 @@
+{
+    "manifest_version": 3,
+    "name": "Git Rush",
+    "version": "1.0",
+    "description": "A fast-paced coding-themed game!",
+    "icons": {
+      "16": "icon.jpeg",
+      "48": "icon.jpeg",
+      "128": "icon.jpeg"
+    },
+    "action": {
+      "default_popup": "index.html",
+      "default_icon": "icon.png"
+    },
+    "permissions": [],
+    "host_permissions": []
+  }
+  

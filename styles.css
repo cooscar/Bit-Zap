@@ -1,0 +1,126 @@
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: #1e1e2e;
+    color: white;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+
+.menu-container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background: #252537;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    color: #FFD700;
+}
+
+
+#score {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color: #ff4c4c;
+}
+
+
+.level-container h3 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    color: #00d9ff;
+}
+
+
+.level-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    padding: 10px;
+}
+
+
+button {
+    background: #ff9f43;
+    color: white;
+    border: none;
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+button:hover {
+    background: #ff6b2b;
+    transform: scale(1.05);
+}
+
+
+.links {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+
+.social-btn {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.social-btn img {
+    width: 20px;
+    height: 20px;
+}
+
+
+.discord {
+    background: #5865F2;
+    color: white;
+}
+
+.discord:hover {
+    background: #4752C4;
+}
+
+
+.github {
+    background: #333;
+    color: white;
+}
+
+.github:hover {
+    background: #222;
+}
+
+
+button.completed {
+    background: linear-gradient(135deg, #00ff99, #0066ff);
+    color: white;
+    font-weight: bold;
+    border: 2px solid #fff;
+    box-shadow: 0 0 15px rgba(0, 255, 153, 0.8);
+    transform: scale(1.05);
+    transition: all 0.3s ease-in-out;
+}
+
+button.completed:hover {
+    background: linear-gradient(135deg, #00cc88, #0055cc);
+    box-shadow: 0 0 20px rgba(0, 255, 153, 1);
+}
