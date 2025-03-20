@@ -66,6 +66,13 @@ class Player {
             this.freeze(300);
             setTimeout(() => restartGame(), 300);
         }
+        if (this.position.y <= 0) {
+            this.position.y = 0;
+            this.velocity.y = 0;
+        }
+        if (this.position.y + this.height >= canvas.height) {
+            console.log('crash')
+        }
 
         if (levelData[tileY] && levelData[tileY][tileX] === '1' && this.velocity.y >= 0) {
             this.position.y = tileY * 32 - this.height;
@@ -100,9 +107,12 @@ class Player {
             this.freeze(300);
             setTimeout(() => restartGame(), 300);
         }
+
+        
     
         let rightTileX = Math.floor((this.position.x + this.width) / 32);
         let rightTileY = Math.floor(this.position.y / 32);
+
         if (levelData[rightTileY] && levelData[rightTileY][rightTileX] === '1') {
             particleSystem.addParticles(this.position.x, this.position.y, 'red', 10);
             this.freeze(300);
