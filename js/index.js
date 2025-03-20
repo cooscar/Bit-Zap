@@ -66,12 +66,11 @@ class Player {
             this.freeze(300);
             setTimeout(() => restartGame(), 300);
         }
+        let death = this.position.y + 30
         if (this.position.y <= 0) {
-            this.position.y = 0;
-            this.velocity.y = 0;
-        }
-        if (this.position.y + this.height >= canvas.height) {
-            console.log('crash')
+            particleSystem.addParticles(this.position.x, death, 'red', 20);
+            this.freeze(300);
+            setTimeout(() => restartGame(), 300);
         }
 
         if (levelData[tileY] && levelData[tileY][tileX] === '1' && this.velocity.y >= 0) {
